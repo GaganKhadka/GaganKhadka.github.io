@@ -1,0 +1,104 @@
+
+
+h1{
+    padding-top: 5px;
+    text-align: center;
+    color: purple;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #161512;
+}
+
+.container h1{
+    font-size: 3em;
+    text-align: center;
+    padding: 40px;
+    text-transform: capitalize;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+
+
+.flex-container .flex-item img{
+    width: 300px;
+    height: 300px;
+    padding-bottom: 20px ;
+    padding-left: 30px;
+}
+
+h2{
+    text-align: center;
+    color: rgb(252, 252, 252);
+}
+
+
+
+@media (max-width: 854px){
+    .container{
+        height: auto;
+    }
+}
+
+@media (max-width: 641px){
+    .flex-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-item{
+        padding-bottom: 15px;
+    }
+}
+
+
+
+
+
+button{
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgb(241, 11, 241);
+    background: transparent;
+    color: rgb(235, 131, 11);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+ }
+ 
+ 
+ button:hover span{
+    width: 100%;
+
+ }
+.Next{
+    padding-left: 80%;
+    padding-top: 5%;
+ }
+.nav-section {
+    border: 8px solid burlywood; 
+    padding: 10px; 
+    padding-bottom: 20px;
+    transition: background-color 0.5s, border 0.5s;
+}
+
+.nav-section:hover {
+    background-color: #8d1f1f;
+    border-color: #270303; 
